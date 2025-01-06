@@ -1,48 +1,59 @@
-*{
-	 box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
 }
+
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background: #333;
 }
 
-
-.menu > li{
-	 display: relative;
-	 display: inline-block;
-	 margin: 0 12px;
-	 padding-bottom: 20px;
+.menu > li {
+    position: relative; 
+    display: inline-block;
+    margin: 0 12px;
+    padding-bottom: 20px;
+   
 }
 
-.menu > li:hover .sub-menu{
-	 display: block;
+.menu > li:hover .sub-menu {
+    display: block; 
 }
 
-.menu > li a{
-	 color:#fff;
-	 text-decoration: none;
+.menu a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.sub-menu{
-	 display:absolute;
-	 top:32px;
-	 left:-12px;
-	 width:140px;
-	 background:#fff;
-	 display: none;
+.sub-menu {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 140px;
+    background: #fff;
+    display: none; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
 }
 
-.sub-menu li:hover{
-	 background-color: #ddd;
+.sub-menu li {
+    padding: 0;
 }
 
-.sub-menu a{
-	 display: block;
-	 padding: 8px 16px;
-	 border: 1px solid #ccc;
- 	color:#333;
+.sub-menu li:hover {
+    background-color: #ddd;
 }
+
+.sub-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
